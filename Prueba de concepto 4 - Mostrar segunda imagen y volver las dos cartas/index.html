@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #daeffa;
+    }
+
+    #app {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .tarjeta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #AEE2FF;
+      border-radius: 20px;
+      height: 200px;
+      width: 180px;
+    }
+
+    .imgTarjeta {
+      height: 60%;
+      width: 60%;
+      object-fit: content;
+    }
+
+    .desactivada {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="tarjeta" data-indice-id="0">
+      <img class="imgTarjeta" data-indice-id="0" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+    <div class="tarjeta" data-indice-id="1">
+      <img class="imgTarjeta" data-indice-id="1" src="/ParteAtras.png" alt="ParteAtras">
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
